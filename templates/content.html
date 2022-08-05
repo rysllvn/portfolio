@@ -1,0 +1,62 @@
+{% macro about() %}
+ <div class="user-details">
+  <h1> About </h1>
+  <p> {{ config.extra.user_description }} </p>
+</div>
+  <div class="user">
+    <div class="tech">
+      <h2>Languages</h2>
+      <i class="devicon-html5-plain-wordmark"></i>
+      <i class="devicon-css3-plain-wordmark colored"></i>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-typescript-original colored"></i>
+      <i class="devicon-ruby-plain colored"></i>
+      <p>HTML5, CSS3, JavaScript, TypeScript, Ruby</p>
+    </div>
+    <div class="tech">
+      <h2>Frameworks and Libraries</h2>
+      <i class="devicon-react-original-wordmark colored"></i>
+      <i class="devicon-d3js-plain" colored></i>
+      <i class="devicon-angularjs-plain-wordmark colored"></i>
+      <i class="devicon-backbonejs-plain-wordmark colored"></i>
+      <p>React, D3, Angular, Backbone</p>
+    </div>
+    <div class="tech">
+      <h2>Tools</h2>
+      <i class="devicon-git-plain"></i>
+      <i class="devicon-github-original"></i>
+      <p>Git, GitHub</p>
+    </div>
+</div>
+{% endmacro about %}
+
+{% macro projects() %}
+<div class="user-details">
+  <h1> Featured Projects </h1>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+  </div>
+  <div class="contents">
+    <h3> Audiocloud </h3>
+    <p>Fullstack Soundcloud clone</p>
+    <p>Includes the global audio player, track visualizer, and a rudimentary search</p>
+    <p>React, Redux, Ruby on Rails, AWS S3</p>
+    <a class="project-link" href="#">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/jump-gameplay.gif" }}" />
+  </div>
+  <div class="contents-right">
+    <h3> Jump </h3>
+    <p>2D platformer with a some fun visual effects</p>
+    <p>Built with the HTML Canvas and no frameworks</p>
+    <p>Games are quick, let me know how far you can get</p>
+    <a class="project-link" href="https://rysllvn.github.io/jump/" target="_blank">Check it out</a>
+  </div>
+</div>
+{% endmacro projects %}
+
